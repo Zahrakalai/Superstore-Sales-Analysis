@@ -161,8 +161,6 @@ This Table show the special days ,i made other years in different sheet of excel
 
 ![daily sales in 2015,2016,2017,2018](https://github.com/user-attachments/assets/6bdb0767-abb9-4f03-806d-5b4ac71239fe)
 
-Daily sales  Trend in each year:
-
 
 *5. Total Sales base on Product in 3 different categories of each year as different colour:
 
@@ -197,7 +195,8 @@ Daily sales  Trend in each year:
 | Consumer    | 1148061     |
 
 *10. Total sales base on cities in different categories in 2015-2018:
-![Total Sales base on Cities in different region in 2015-2018](https://github.com/user-attachments/assets/9922147a-c891-4819-8054-49f8a8925df1)
+![image](https://github.com/user-attachments/assets/dba5b722-d0d3-4f0e-baa2-024374658c5c)
+
 
 *11. Top 10 Customers in different segment by different Categories:
 ![Top 10 customers in different segment by different Categories](https://github.com/user-attachments/assets/b153cd5a-24b4-4a06-a8fb-0d57318fcf92)
