@@ -130,9 +130,39 @@ I did visualize Total sales by month in each year :
 
 ![Total sales by month (2015-2018)](https://github.com/user-attachments/assets/1c6d6de6-9e9a-40a8-8efd-5d8a68d7f1ea)
 
-*4. Total Sales by day of each month and i upload the table of special day's calender in tableau:
+*4. Total Sales by day of each day and i upload the table of special day's calender in tableau:
+This Table show the special days ,i made other years in different sheet of excel and uploaded into tableau to recognize in these days we had better sales or not.
+
+| Date       | special's day             |
+|------------|---------------------------|       
+| 1/1/2018   | New Year's Day            |
+| 1/15/2018  | martin Luther king Jr.day |
+| 2/14/2018  | Valentine's day           |
+| 2/19/2018  | President's day           |
+| 4/1/2018   | Easter Sunday             |
+| 4/2/2018   | Easter Monday             |
+| 4/17/2018  | Tax Day                   |
+| 5/13/2018  | Mother's day              |
+| 5/28/2018  | Memorial day              |
+| 6/14/2018  | Flag day                  |
+| 6/17/2018  | Father's day              |
+| 7/4/2018   | Independence day          |
+| 9/3/2018   | Labour Day                |
+| 10/8/2018  | Columbus day              |
+| 10/31/2018 | Halloween                 |
+| 11/6/2018  | Election day              |
+| 11/12/2018 | veterans Day's day off    |
+| 11/22/2018 | Thanksgiving day          |
+| 11/23/2018 | Black Friday              |
+| 12/24/2018 | Christmas Eve             |
+| 12/25/2018 | Christmas Day             |
+| 12/26/2018 | Boxing Day                |
+| 12/31/2018 | New Year's Eve            |
 
 ![daily sales in 2015,2016,2017,2018](https://github.com/user-attachments/assets/6bdb0767-abb9-4f03-806d-5b4ac71239fe)
+
+Daily sales  Trend in each year:
+
 
 *5. Total Sales base on Product in 3 different categories of each year as different colour:
 
@@ -172,6 +202,24 @@ I did visualize Total sales by month in each year :
 *11. Top 10 Customers in different segment by different Categories:
 ![Top 10 customers in different segment by different Categories](https://github.com/user-attachments/assets/b153cd5a-24b4-4a06-a8fb-0d57318fcf92)
 
+*12. Top 10 Customers in different cities 
+
+| City          | Customer_Name | year | Total_sales |
+|---------------|---------------|------|-------------|
+| Jacksonville  | Sean Miller   | 2015 | 23661.228   |
+| Lafayette     | Tamara Chand  | 2017 | 18336.74    |
+| Seattle       | Raymond Buch  | 2018 | 14052.48    |
+| New York City | Tom Ashbrook  | 2018 | 13723.498   |
+| San Antonio   | Becky Martin  | 2015 | 10539.896   |
+| Newark        | Hunter Lopez  | 2018 | 10499.97    |
+| Minneapolis   | Sanjit Chand  | 2015 | 9900.19     |
+| Detroit       | Adrian Barton | 2017 | 9892.74     |
+| Lakewood      | Bill Shonely  | 2017 | 9135.19     |
+
+*13. Category Sales Trends by Month and Year (2015-2018)
+![Category Sales Trends by Month and Year (2015-2018)](https://github.com/user-attachments/assets/581079e5-fe16-4ab8-a8c7-1a02167c0c40)
+
+*14. 
 
 
 
