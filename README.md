@@ -30,24 +30,24 @@ Unique Customers: 793
 there is no null values
 
 ### Identify Inconsistencies
-*1.Category of product:*
+*1.Category of product:*   *Total Product:1849*
 *Office Supplies
 *Furniture
 *Technology
-*2.region*
+*2.Sub-Category*
+17 items:
+Art,Paper,Binders,Chairs,Phones,Envelopes,Furnishings,Tables,Fasteners,Machines,Accessories,Storage and Supplies
+*3.region*
 *Central	
 *East
 *West
 *South
-*3.segment*
+*4.country* : United States
+*5.How many cities we deliver products*: 529 cities
+*6.segment of customer*   *Total of Customers:793*
 *Consumer
 *Corporate
 *Home Office
-*3.Sub-Category*
-17 items:
-Art,Paper,Binders,Chairs,Phones,Envelopes,Furnishings,Tables,Fasteners,Machines,Accessories,Storage and Supplies
-*4.country* : United States
-*How many cities we deliver products*: 529 cities
 *-- there is no duplicate in rows*
 ## Step3: Process(clean data)
 Add 2 column:Month,year 
@@ -134,9 +134,44 @@ I did visualize Total sales by month in each year :
 
 ![daily sales in 2015,2016,2017,2018](https://github.com/user-attachments/assets/6bdb0767-abb9-4f03-806d-5b4ac71239fe)
 
-*5. Total Sales base on Product in 3 different categories:
+*5. Total Sales base on Product in 3 different categories of each year as different colour:
 
 ![Total sales base on product in 3 different Categories](https://github.com/user-attachments/assets/e0c7661c-c98b-4088-82cd-c0f534de22c1)
+
+*6. Total Product of each segment
+
+| Segment     | total_product |
+|-------------|---------------|
+| Home Office | 1092          |
+| Corporate   | 1432          |
+| Consumer    | 1700          |
+
+*7. Total Product of each Category
+
+| Category        | f0_  |
+|-----------------|------|
+| Furniture       | 375  |
+| Office Supplies | 1082 |
+| Technology      | 404  |
+
+*8. Products contribution of Total sales (%) in each year:
+
+![image](https://github.com/user-attachments/assets/b6b7a600-64cd-41bb-a007-e9288256b180)
+
+*9.Total sales by segment
+
+| segment     | Total_sales |
+|-------------|-------------|
+| Home Office | 424982.2    |
+| Corporate   | 688494.1    |
+| Consumer    | 1148061     |
+
+*10. Total sales base on cities in different categories in 2015-2018:
+![Total Sales base on Cities in different region in 2015-2018](https://github.com/user-attachments/assets/9922147a-c891-4819-8054-49f8a8925df1)
+
+*11. Top 10 Customers in different segment by different Categories:
+![Top 10 customers in different segment by different Categories](https://github.com/user-attachments/assets/b153cd5a-24b4-4a06-a8fb-0d57318fcf92)
+
 
 
 
