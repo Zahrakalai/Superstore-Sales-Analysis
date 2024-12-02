@@ -128,4 +128,5 @@ Add 2 column:Month,year
 I did visualize Total sales by month in each year : https://public.tableau.com/app/profile/zahra.khanlarzadehkolaei/viz/Superstore_salesUnitedStates/Dashboard8#1
 
 
-![Total sales by month (2015-2018)](C:\Users\zahra\Downloads\sales dataset\Total sales by month (2015-2018).png)
+![Total sales by month (2015-2018)](https://github.com/user-attachments/assets/1c6d6de6-9e9a-40a8-8efd-5d8a68d7f1ea)
+
