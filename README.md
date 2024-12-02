@@ -125,8 +125,18 @@ Add 2 column:Month,year
 | 4     | 35541.910099999986 |   |
 | 2     | 19920.997400000011 |   |
 
-I did visualize Total sales by month in each year : https://public.tableau.com/app/profile/zahra.khanlarzadehkolaei/viz/Superstore_salesUnitedStates/Dashboard8#1
+I did visualize Total sales by month in each year : 
 
 
 ![Total sales by month (2015-2018)](https://github.com/user-attachments/assets/1c6d6de6-9e9a-40a8-8efd-5d8a68d7f1ea)
+
+*4. Total Sales by day of each month and i upload the table of special day's calender in tableau:
+
+![daily sales in 2015,2016,2017,2018](https://github.com/user-attachments/assets/6bdb0767-abb9-4f03-806d-5b4ac71239fe)
+
+*5. Total Sales base on Product in 3 different categories:
+
+![Total sales base on product in 3 different Categories](https://github.com/user-attachments/assets/e0c7661c-c98b-4088-82cd-c0f534de22c1)
+
+
 
