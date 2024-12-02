@@ -218,7 +218,43 @@ This Table show the special days ,i made other years in different sheet of excel
 *13. Category Sales Trends by Month and Year (2015-2018)
 ![Category Sales Trends by Month and Year (2015-2018)](https://github.com/user-attachments/assets/581079e5-fe16-4ab8-a8c7-1a02167c0c40)
 
-*14. 
+*14. Customer Last Purchase Analysis: Months Since Last Purchase and Churn Status (as of December 31, 2018)
+I just put here for 20 rows,
+
+| Customer_Name     | last_purchase_date | months_since_last_purchase | customer_status |
+|-------------------|--------------------|----------------------------|-----------------|
+| Paul Prost        | 9/24/2018          | 3                          | Active          |
+| Guy Phonely       | 11/26/2016         | 25                         | Churned         |
+| Sung Shariari     | 9/1/2018           | 3                          | Active          |
+| Patrick O'Donnell | 12/30/2018         | 0                          | Active          |
+| Pamela Stobb      | 9/14/2018          | 3                          | Active          |
+| George Zrebassa   | 7/26/2018          | 5                          | Active          |
+| Frank Gastineau   | 11/26/2018         | 1                          | Active          |
+| Carol Triggs      | 9/25/2018          | 3                          | Active          |
+| Denny Blanton     | 6/26/2018          | 6                          | Active          |
+| Scott Cohen       | 6/26/2018          | 6                          | Active          |
+| Alejandro Grove   | 3/27/2018          | 9                          | Churned         |
+| Brian Dahlen      | 9/24/2018          | 3                          | Active          |
+| Fred McMath       | 8/7/2018           | 4                          | Active          |
+| Doug O'Connell    | 12/4/2018          | 0                          | Active          |
+| Michael Paige     | 10/19/2018         | 2                          | Active          |
+| Alex Russell      | 9/10/2018          | 3                          | Active          |
+| Jennifer Braxton  | 12/23/2018         | 0                          | Active          |
+| Ben Ferrer        | 12/14/2018         | 0                          | Active          |
+| Bart Pistole      | 12/13/2018         | 0                          | Active          |
+
+The Bar Chart in Tableau:
+
+![Churned Customers](https://github.com/user-attachments/assets/dabfa97e-f6ee-4c04-ac0b-200ebf938e75)
+
+*Monthly Churned rate trend:*
+
+![Monthly Churn rate trends](https://github.com/user-attachments/assets/8a0fcd48-31c5-4de4-8ce8-7056bebded75)
+
+*15. Regional Sales Distribution in 2015/2016/2017/2018: Top Cities in Central, East, South, and West Regions
+
+
+![Total sales in different region (2015-2018)](https://github.com/user-attachments/assets/5328b237-3284-410e-96ae-73d8f6c18170)
 
 
 
