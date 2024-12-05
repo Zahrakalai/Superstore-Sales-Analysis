@@ -195,10 +195,49 @@ This Table show the special days ,i made other years in different sheet of excel
 | Consumer    | 1148061     |
 
 *10. Total sales base on cities in different categories in 2015-2018:
+
+# Top 10 Cities base on Total sales:
+
+| city          | region  | state        | total_sales        |   |
+|---------------|---------|--------------|--------------------|---|
+| New York City | East    | New York     | 252462.5           |   |
+| Los Angeles   | West    | California   | 173420.18099999981 |   |
+| Seattle       | West    | Washington   | 116106.32199999993 |   |
+| San Francisco | West    | California   | 109041.11999999984 |   |
+| Philadelphia  | East    | Pennsylvania | 108841.74899999995 |   |
+| Houston       | Central | Texas        | 63956.142799999987 |   |
+| Chicago       | Central | Illinois     | 47820.132999999965 |   |
+| San Diego     | West    | California   | 47521.028999999995 |   |
+| Detroit       | Central | Michigan     | 42446.94400000001  |   |
+| Jacksonville  | South   | Florida      | 39133.327999999994 |   |
+
 ![image](https://github.com/user-attachments/assets/dba5b722-d0d3-4f0e-baa2-024374658c5c)
 
 
-*11. Top 10 Customers in different segment by different Categories:
+*11. Top 20 Customers in different segment by different Categories:
+
+| customer_name   | segment     | order_date | city          | product_name                                                                  | category        | sub_category | Total_sales |
+|----------------------|-------------|------------|---------------|-------------------------------------------------------------------------------|-----------------|--------------|-------------|
+| Sean Miller  | Home Office | 3/18/2015  | Jacksonville  | Cisco TelePresence System EX90 Videoconferencing Unit                         | Technology      | Machines     | 22638.48    |
+| Tamara Chand | Corporate   | 10/2/2017  | Lafayette     | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 17499.95    |
+| Raymond Buch | Consumer    | 3/23/2018  | Seattle       | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 13999.96    |
+| Tom Ashbrook | Home Office | 10/22/2018 | New York City | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 11199.97    |
+| Hunter Lopez | Consumer    | 11/17/2018 | Newark        | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 10499.97    |
+| Adrian Barto | Consumer    | 12/17/2017 | Detroit       | GBC Ibimaster 500 Manual ProClick Binding System                              | Office Supplies | Binders      | 9892.74     |
+| Sanjit Chand | Consumer    | 9/23/2015  | Minneapolis   | Ibico EPK-21 Electric Binding System                                          | Office Supplies | Binders      | 9449.95     |
+| Bill Shonely | Corporate   | 4/16/2017  | Lakewood      | 3D Systems Cube Printer, 2nd Generation, Magenta                              | Technology      | Machines     | 9099.93     |
+| Sanjit Engle | Consumer    | 2/2/2017   | Arlington     | HP Designjet T520 Inkjet Large Format Printer - 24" Color                     | Technology      | Machines     | 8749.95     |
+| Christopher Conant| Consume| 5/23/2017  | Philadelphia  | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      |8399.976     |
+| Ken Lonsdale | Consumer    | 7/25/2015  | San Francisco | High Speed Automatic Electric Letter Opener                                   | Office Supplies | Supplies     | 8187.65     |
+| Becky Martin | Consumer    | 9/8/2015   | San Antonio   | Lexmark MX611dhe Monochrome Laser Printer                                     | Technology      | Machines     | 8159.952    |
+| Grant Thornton| Corporate  | 11/4/2018  | Burlington    | Cubify CubeX 3D Printer Triple Head Print                                     | Technology      | Machines     | 7999.98     |
+| Tom Boeckenhauer | Consumer| 12/14/2015 | New York City | HP Designjet T520 Inkjet Large Format Printer - 24" Color                     | Technology      | Machines     | 6999.96     |
+| Christopher  | Consumer    | 3/16/2016  |   Atlanta    | Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual   Bind |Office Supplies  |  Binders     | 6354.95     |
+| Andy Reiter  | Consumer    | 1/16/2018  | Jackson       | GBC DocuBind P400 Electric Binding System                                     | Office Supplies | Binders      | 5443.96     |
+| Daniel Raglin| Home Office | 10/4/2017  | Providence    | Hewlett Packard LaserJet 3310 Copier                                          | Technology      | Copiers      | 5399.91     |
+| Todd Sumrall | Corporate   | 10/5/2018  | New York City | 3D Systems Cube Printer, 2nd Generation, Magenta                              | Technology      | Machines     | 5199.96     |
+| Jane Waco    | Corporate   | 10/13/2018 | Sacramento    | Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual   Bind | Office Supplies | Binders      | 5083.96     |
+
 ![Top 10 customers in different segment by different Categories](https://github.com/user-attachments/assets/b153cd5a-24b4-4a06-a8fb-0d57318fcf92)
 
 *12. Top 10 Customers in different cities 
@@ -217,6 +256,24 @@ This Table show the special days ,i made other years in different sheet of excel
 
 *13. Category Sales Trends by Month and Year (2015-2018)
 ![Category Sales Trends by Month and Year (2015-2018)](https://github.com/user-attachments/assets/581079e5-fe16-4ab8-a8c7-1a02167c0c40)
+
+*Total sales by Categories in each year: Find out each year which category was the most popular*
+
+| Year | Category        | total_sales |
+|------|-----------------|-------------|
+| 2015 | Technology      | 173865.5    |
+| 2015 | Furniture       | 156477.9    |
+| 2015 | Office Supplies | 149512.8    |
+| 2016 | Furniture       | 164053.9    |
+| 2016 | Technology      | 162257.7    |
+| 2016 | Office Supplies | 133124.4    |
+| 2017 | Technology      | 221961.9    |
+| 2017 | Furniture       | 195813      |
+| 2017 | Office Supplies | 182417.6    |
+| 2018 | Technology      | 269370.7    |
+| 2018 | Office Supplies | 240367.5    |
+| 2018 | Furniture       | 212313.8    |
+
 
 *14. Customer Last Purchase Analysis: Months Since Last Purchase and Churn Status (as of December 31, 2018)
 I just put here for 20 rows,
@@ -256,5 +313,85 @@ The Bar Chart in Tableau:
 
 ![Total sales in different region (2015-2018)](https://github.com/user-attachments/assets/5328b237-3284-410e-96ae-73d8f6c18170)
 
+*16. Contribution of Product(%) in 2018,2017
+
+| product_name                                                | year | Category        | product_sales | contribution_to_sales |
+|-------------------------------------------------------------|------|-----------------|---------------|-----------------------|
+| Canon imageCLASS 2200 Advanced Copier                       | 2018 | Technology      | 35699.898     | 4.94%                 |
+| Martin Yale Chadless Opener Electric   Letter Opener        | 2018 | Office Supplies | 11825.902     | 1.64%                 |
+| GBC DocuBind TL300 Electric Binding   System                | 2018 | Office Supplies | 10943.278     | 1.52%                 |
+| Samsung Galaxy Mega 6.3                                     | 2018 | Technology      | 9239.78       | 1.28%                 |
+| Hewlett Packard LaserJet 3310 Copier                        | 2018 | Technology      | 9239.846      | 1.28%                 |
+---------------------------------------------------------------------------------------------------------------------------------
+| Canon imageCLASS 2200 Advanced Copier                       | 2017 | Technology      | 25899.926     | 4.32%                 |
+| GBC Ibimaster 500 Manual ProClick Binding   System          | 2017 | Office Supplies | 12860.562     | 2.14%                 |
+| 3D Systems Cube Printer, 2nd Generation,   Magenta          | 2017 | Technology      | 9099.93       | 1.52%                 |
+| High Speed Automatic Electric Letter   Opener               | 2017 | Office Supplies | 8842.662      | 1.47%                 |
+| HP Designjet T520 Inkjet Large Format   Printer - 24" Color | 2017 | Technology      | 8749.95       | 1.46%                 |
 
 
+*17. top contributors to total sales based on the Pareto Principle (80/20 Rule)
+
+| product_name                                                                  | total_sales | contribution_percentage | cumulative_contribution |
+|-------------------------------------------------------------------------------|-------------|-------------------------|-------------------------|
+| Canon imageCLASS 2200 Advanced Copier                                         | 61599.824   | 2.72                    | 2.72                    |
+| Fellowes PB500 Electric Punch Plastic   Comb Binding Machine with Manual Bind | 27453.384   | 1.21                    | 3.93                    |
+| Cisco TelePresence System EX90   Videoconferencing Unit                       | 22638.48    | 1                       | 4.93                    |
+| HON 5400 Series Task Chairs for Big and   Tall                                | 21870.576   | 0.97                    | 5.9                     |
+| GBC DocuBind TL300 Electric Binding   System                                  | 19823.479   | 0.88                    | 6.78                    |
+| GBC Ibimaster 500 Manual ProClick Binding   System                            | 19024.5     | 0.84                    | 7.62                    |
+| Hewlett Packard LaserJet 3310 Copier                                          | 18839.686   | 0.83                    | 8.45                    |
+| HP Designjet T520 Inkjet Large Format   Printer - 24" Color                   | 18374.895   | 0.81                    | 9.26                    |
+| GBC DocuBind P400 Electric Binding System                                     | 17965.068   | 0.79                    | 10.05                   |
+| High Speed Automatic Electric Letter   Opener                                 | 17030.312   | 0.75                    | 10.8                    |
+| Lexmark MX611dhe Monochrome Laser Printer                                     | 16829.901   | 0.74                    | 11.54                   |
+| Martin Yale Chadless Opener Electric   Letter Opener                          | 16656.2     | 0.74                    | 12.28                   |
+| Ibico EPK-21 Electric Binding System                                          | 15875.916   | 0.7                     | 12.98                   |
+| Riverside Palais Royal Lawyers Bookcase,   Royale Cherry Finish               | 15610.9656  | 0.69                    | 13.67                   |
+| 3D Systems Cube Printer, 2nd Generation,   Magenta                            | 14299.89    | 0.63                    | 14.3                    |
+| Samsung Galaxy Mega 6.3                                                       | 13943.668   | 0.62                    | 14.92                   |
+| Apple iPhone 5                                                                | 12996.6     | 0.57                    | 15.49                   |
+| Bretford Rectangular Conference Table   Tops                                  | 12995.2915  | 0.57                    | 16.06                   |
+| Global Troy Executive Leather Low-Back   Tilter                               | 12975.382   | 0.57                    | 16.63                   |
+| SAFCO Arco Folding Chair                                                      | 11572.78    | 0.51                    | 17.14                   |
+
+
+--insight:
+*product_name:"Canon imageCLASS 2200 Advanced Copier."
+*total_sales: $61,599.82.
+  This indicates how much money this product has contributed to the overall sales during the specified period
+*The percentage of the total sales contributed by this product: 2.72%.
+*Formula: Contribution Percentage} =( total_sales of product\total sales of all products) * 100*
+For example:
+Contribution Percentage =(61599.824 /Total Sales) × 100
+*This indicates that this product accounts for 2.72% of the total sales revenue.*
+*cumulative_contribution:
+The running total of the contribution percentages up to this product in a descending order of sales: 2.72%.
+If this product is the first in the sorted list (i.e., the highest sales), the cumulative_contribution is the same as its contribution_percentage.
+As you go down the list, the cumulative_contribution increases by adding the contribution_percentage of subsequent products.
+
+*What This Means for Analysis:*
+This product contributes 2.72% of total sales, which is significant or negligible depending on your overall sales distribution.
+The cumulative contribution (2.72%) tells you where this product stands in terms of its impact. 
+If your goal is to identify the top 20% products driving 80% of sales (Pareto Principle), this product would be included only if the cumulative contribution is ≤80%.
+
+*18. purchase frequency for each customer
+
+| customer_id | customer_name       | total_sales        | purchase_frequency |
+|-------------|---------------------|--------------------|--------------------|
+| WB-21850    | William Brown       | 6129.7100000000009 | 35                 |
+| PP-18955    | Paul Prost          | 7252.608           | 34                 |
+| MA-17560    | Matt Abelman        | 4299.161000000001  | 34                 |
+| JL-15835    | John Lee            | 9576.3430000000026 | 33                 |
+| CK-12205    | Chloris Kastensmidt | 3154.8550000000005 | 32                 |
+| JD-15895    | Jonathan Doherty    | 7610.864           | 32                 |
+| SV-20365    | Seth Vernon         | 11470.950000000003 | 32                 |
+| EP-13915    | Emily Phan          | 5478.0608          | 31                 |
+| ZC-21910    | Zuschuss Carroll    | 8025.7070000000012 | 31                 |
+| AP-10915    | Arthur Prichep      | 3323.5559999999996 | 31                 |
+
+*Top Customers by Purchase Frequency*
+--William Brown (WB-21850) has the highest purchase frequency with 35 transactions: This indicates a very frequent buyer who likely makes smaller, consistent purchases.
+Despite the highest frequency, his total sales ($6,129.71) are not the highest, meaning he may purchase lower-cost items more frequently.
+--Paul Prost (PP-18955) and Matt Abelman (MA-17560) follow closely with 34 transactions each:
+Paul Prost has generated the highest total sales in this table with $7,252.61, indicating he might purchase higher-priced items compared to others.
