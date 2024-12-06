@@ -216,27 +216,26 @@ This Table show the special days ,i made other years in different sheet of excel
 
 *11. Top 20 Customers in different segment by different Categories:
 
-| customer_name   | segment     | order_date | city          | product_name                                                                  | category        | sub_category | Total_sales |
-|----------------------|-------------|------------|---------------|-------------------------------------------------------------------------------|-----------------|--------------|-------------|
-| Sean Miller  | Home Office | 3/18/2015  | Jacksonville  | Cisco TelePresence System EX90 Videoconferencing Unit                         | Technology      | Machines     | 22638.48    |
-| Tamara Chand | Corporate   | 10/2/2017  | Lafayette     | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 17499.95    |
-| Raymond Buch | Consumer    | 3/23/2018  | Seattle       | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 13999.96    |
-| Tom Ashbrook | Home Office | 10/22/2018 | New York City | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 11199.97    |
-| Hunter Lopez | Consumer    | 11/17/2018 | Newark        | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      | 10499.97    |
-| Adrian Barto | Consumer    | 12/17/2017 | Detroit       | GBC Ibimaster 500 Manual ProClick Binding System                              | Office Supplies | Binders      | 9892.74     |
-| Sanjit Chand | Consumer    | 9/23/2015  | Minneapolis   | Ibico EPK-21 Electric Binding System                                          | Office Supplies | Binders      | 9449.95     |
-| Bill Shonely | Corporate   | 4/16/2017  | Lakewood      | 3D Systems Cube Printer, 2nd Generation, Magenta                              | Technology      | Machines     | 9099.93     |
-| Sanjit Engle | Consumer    | 2/2/2017   | Arlington     | HP Designjet T520 Inkjet Large Format Printer - 24" Color                     | Technology      | Machines     | 8749.95     |
-| Christopher Conant| Consume| 5/23/2017  | Philadelphia  | Canon imageCLASS 2200 Advanced Copier                                         | Technology      | Copiers      |8399.976     |
-| Ken Lonsdale | Consumer    | 7/25/2015  | San Francisco | High Speed Automatic Electric Letter Opener                                   | Office Supplies | Supplies     | 8187.65     |
-| Becky Martin | Consumer    | 9/8/2015   | San Antonio   | Lexmark MX611dhe Monochrome Laser Printer                                     | Technology      | Machines     | 8159.952    |
-| Grant Thornton| Corporate  | 11/4/2018  | Burlington    | Cubify CubeX 3D Printer Triple Head Print                                     | Technology      | Machines     | 7999.98     |
-| Tom Boeckenhauer | Consumer| 12/14/2015 | New York City | HP Designjet T520 Inkjet Large Format Printer - 24" Color                     | Technology      | Machines     | 6999.96     |
+| customer_name| segment     | order_date | city          | product_name                         | category|sub_category | Total_sales |
+| Sean Miller  | Home Office | 3/18/2015  | Jacksonville  | Cisco TelePresence System EX90 Videoconferencing Unit| Technology| Machines | 22638.48     |
+| Tamara Chand | Corporate   | 10/2/2017  | Lafayette     | Canon imageCLASS 2200 Advanced Copier| Technology | Copiers | 17499.95     |
+| Raymond Buch | Consumer    | 3/23/2018  | Seattle       | Canon imageCLASS 2200 Advanced Copier| Technology | Copiers | 13999.96     |
+| Tom Ashbrook | Home Office | 10/22/2018 | New York City | Canon imageCLASS 2200 Advanced Copier| Technology | Copiers | 11199.97     |
+| Hunter Lopez | Consumer    | 11/17/2018 | Newark        | Canon imageCLASS 2200 Advanced Copier| Technology | Copiers | 10499.97     |
+| Adrian Barto | Consumer    | 12/17/2017 | Detroit       | GBC Ibimaster 500 Manual ProClick Binding System  | Office Supplies|Binders      | 9892.74     |
+| Sanjit Chand | Consumer    | 9/23/2015  | Minneapolis   | Ibico EPK-21 Electric Binding System| Office Supplies| Binders| 9449.95     |
+| Bill Shonely | Corporate   | 4/16/2017  | Lakewood      | 3D Systems Cube Printer, 2nd Generation, Magenta| Technology| Machines| 9099.93     |
+| Sanjit Engle | Consumer    | 2/2/2017   | Arlington     | HP Designjet T520 Inkjet Large Format Printer - 24" Color| Technology| Machines     | 8749.95     |
+| Christopher Conant| Consume| 5/23/2017  | Philadelphia  | Canon imageCLASS 2200 Advanced Copier| Technology  | Copiers  |8399.976     |
+| Ken Lonsdale | Consumer    | 7/25/2015  | San Francisco | High Speed Automatic Electric Letter Opener | Office Supplies | Supplies     | 8187.65     |
+| Becky Martin | Consumer    | 9/8/2015   | San Antonio   | Lexmark MX611dhe Monochrome Laser Printer|Technology| Machines| 8159.952    |
+| Grant Thornton| Corporate  | 11/4/2018  | Burlington    | Cubify CubeX 3D Printer Triple Head Print|Technology| Machines| 7999.98     |
+| Tom Boeckenhauer | Consumer| 12/14/2015 | New York City | HP Designjet T520 Inkjet Large Format Printer - 24" Color| Technology| Machines | 6999.96 |
 | Christopher  | Consumer    | 3/16/2016  |   Atlanta    | Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual   Bind |Office Supplies  |  Binders     | 6354.95     |
-| Andy Reiter  | Consumer    | 1/16/2018  | Jackson       | GBC DocuBind P400 Electric Binding System                                     | Office Supplies | Binders      | 5443.96     |
-| Daniel Raglin| Home Office | 10/4/2017  | Providence    | Hewlett Packard LaserJet 3310 Copier                                          | Technology      | Copiers      | 5399.91     |
-| Todd Sumrall | Corporate   | 10/5/2018  | New York City | 3D Systems Cube Printer, 2nd Generation, Magenta                              | Technology      | Machines     | 5199.96     |
-| Jane Waco    | Corporate   | 10/13/2018 | Sacramento    | Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual   Bind | Office Supplies | Binders      | 5083.96     |
+| Andy Reiter  | Consumer    | 1/16/2018  | Jackson       | GBC DocuBind P400 Electric Binding System| Office Supplies|Binders| 5443.96 |
+| Daniel Raglin| Home Office | 10/4/2017  | Providence    | Hewlett Packard LaserJet 3310 Copier|Technology |Copiers      | 5399.91     |
+| Todd Sumrall | Corporate   | 10/5/2018  | New York City | 3D Systems Cube Printer, 2nd Generation, Magenta| Technology      | Machines | 5199.96     |
+| Jane Waco    | Corporate   | 10/13/2018 | Sacramento    | Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind | Office Supplies | Binders      | 5083.96     |
 
 ![Top 10 customers in different segment by different Categories](https://github.com/user-attachments/assets/b153cd5a-24b4-4a06-a8fb-0d57318fcf92)
 
@@ -275,9 +274,27 @@ This Table show the special days ,i made other years in different sheet of excel
 | 2018 | Furniture       | 212313.8    |
 
 
-*14. Customer Last Purchase Analysis: Months Since Last Purchase and Churn Status (as of December 31, 2018)
-I just put here for 20 rows,
+*14. Total Churned Customers and Churn rate in each year:
 
+| customers_at_start | year | customers_lost | churn_rate (%)|
+|--------------------|------|----------------|------------   |
+| 273                | 2015 | 136            | 49.82         |
+| 291                | 2016 | 123            | 42.27         |
+| 352                | 2017 | 123            | 34.94         |
+| 433                | 2018 | 96             | 22.17         |
+
+--customers_at_start:The total number of active customers at the beginning of each year.
+--customers_lost:The number of customers who churned (i.e., stopped making purchases) during that year.
+churn_rate:The percentage of customers lost relative to the starting customer base:
+Churn Rate =(customers_lost /customers_at_start) * 100
+### Insight:
+*The churn rate steadily decreased over the four years, from *49.82%* in 2015 to *22.17%* in 2018. This highlights continuous improvements in *customer retention strategies*.
+*The company successfully retained a larger portion of its customer base each year.
+*Customer Base Growth:The number of customers at the start of the year grew consistently, from 273 in 2015 to 433 in 2018, reflecting effective acquisition efforts or customer growth initiatives.
+*Absolute Losses: Although churn rate declined, the absolute number of customers lost remained relatively high until 2018. This suggests that while retention improved, there's still room to further minimize losses.
+
+*Customer Last Purchase Analysis: Months Since Last Purchase and Churn Status (as of December 31, 2018)*
+<<I just put here for 20 rows>>
 | Customer_Name     | last_purchase_date | months_since_last_purchase | customer_status |
 |-------------------|--------------------|----------------------------|-----------------|
 | Paul Prost        | 9/24/2018          | 3                          | Active          |
@@ -332,28 +349,27 @@ The Bar Chart in Tableau:
 
 *17. top contributors to total sales based on the Pareto Principle (80/20 Rule)
 
-| product_name                                                                  | total_sales | contribution_percentage | cumulative_contribution |
-|-------------------------------------------------------------------------------|-------------|-------------------------|-------------------------|
-| Canon imageCLASS 2200 Advanced Copier                                         | 61599.824   | 2.72                    | 2.72                    |
-| Fellowes PB500 Electric Punch Plastic   Comb Binding Machine with Manual Bind | 27453.384   | 1.21                    | 3.93                    |
-| Cisco TelePresence System EX90   Videoconferencing Unit                       | 22638.48    | 1                       | 4.93                    |
-| HON 5400 Series Task Chairs for Big and   Tall                                | 21870.576   | 0.97                    | 5.9                     |
-| GBC DocuBind TL300 Electric Binding   System                                  | 19823.479   | 0.88                    | 6.78                    |
-| GBC Ibimaster 500 Manual ProClick Binding   System                            | 19024.5     | 0.84                    | 7.62                    |
-| Hewlett Packard LaserJet 3310 Copier                                          | 18839.686   | 0.83                    | 8.45                    |
-| HP Designjet T520 Inkjet Large Format   Printer - 24" Color                   | 18374.895   | 0.81                    | 9.26                    |
-| GBC DocuBind P400 Electric Binding System                                     | 17965.068   | 0.79                    | 10.05                   |
-| High Speed Automatic Electric Letter   Opener                                 | 17030.312   | 0.75                    | 10.8                    |
-| Lexmark MX611dhe Monochrome Laser Printer                                     | 16829.901   | 0.74                    | 11.54                   |
-| Martin Yale Chadless Opener Electric   Letter Opener                          | 16656.2     | 0.74                    | 12.28                   |
-| Ibico EPK-21 Electric Binding System                                          | 15875.916   | 0.7                     | 12.98                   |
-| Riverside Palais Royal Lawyers Bookcase,   Royale Cherry Finish               | 15610.9656  | 0.69                    | 13.67                   |
-| 3D Systems Cube Printer, 2nd Generation,   Magenta                            | 14299.89    | 0.63                    | 14.3                    |
-| Samsung Galaxy Mega 6.3                                                       | 13943.668   | 0.62                    | 14.92                   |
-| Apple iPhone 5                                                                | 12996.6     | 0.57                    | 15.49                   |
-| Bretford Rectangular Conference Table   Tops                                  | 12995.2915  | 0.57                    | 16.06                   |
-| Global Troy Executive Leather Low-Back   Tilter                               | 12975.382   | 0.57                    | 16.63                   |
-| SAFCO Arco Folding Chair                                                      | 11572.78    | 0.51                    | 17.14                   |
+| product_name                                       |total_sales | contribution_percentage | cumulative_contribution |
+| Canon imageCLASS 2200 Advanced Copier              | 61599.824  | 2.72                   | 2.72                    |
+| Fellowes PB500 Electric Punch Plastic              | 27453.384  | 1.21                   |   3.93                  |
+| Cisco TelePresence System EX90 Videoconferen       | 22638.48   | 1                      | 4.93                    |
+| HON 5400 Series Task Chairs for Big and   Tall     | 21870.576  |  0.97                  | 5.9                     |
+| GBC DocuBind TL300 Electric Binding   System       | 19823.479  | 0.88                   | 6.78                    |
+| GBC Ibimaster 500 Manual ProClick Binding   System | 19024.5    | 0.84                   | 7.62                    |
+| Hewlett Packard LaserJet 3310 Copier               | 18839.686  | 0.83                   | 8.45                    |
+| HP Designjet T520 Inkjet Large Format   Printer - 24" Color | 18374.895   | 0.81         | 9.26                    |
+| GBC DocuBind P400 Electric Binding System          | 17965.068   | 0.79                  | 10.05                   |
+| High Speed Automatic Electric Letter   Opener      | 17030.312   | 0.75                  | 10.8                    |
+| Lexmark MX611dhe Monochrome Laser Printer          | 16829.901   | 0.74                  | 11.54                   |
+| Martin Yale Chadless Opener Electric Letter Opener | 16656.2     | 0.74                  | 12.28                   |
+| Ibico EPK-21 Electric Binding System               | 15875.916   | 0.7                   | 12.98                   |
+| Riverside Palais Royal Lawyers Bookcase,   Royale Cherry Finish | 15610.9656  | 0.69     | 13.67                   |
+| 3D Systems Cube Printer, 2nd Generation, Magenta   | 14299.89    | 0.63                  | 14.3                    |
+| Samsung Galaxy Mega 6.3                            | 13943.668   | 0.62                  | 14.92                   |
+| Apple iPhone 5                                     | 12996.6     | 0.57                  | 15.49                   |
+| Bretford Rectangular Conference Table   Tops       | 12995.2915  | 0.57                  | 16.06                   |
+| Global Troy Executive Leather Low-Back   Tilter    | 12975.382   | 0.57                  | 16.63                   |
+| SAFCO Arco Folding Chair                           | 11572.78    | 0.51                  | 17.14                   |
 
 
 --insight:
@@ -395,3 +411,47 @@ If your goal is to identify the top 20% products driving 80% of sales (Pareto Pr
 Despite the highest frequency, his total sales ($6,129.71) are not the highest, meaning he may purchase lower-cost items more frequently.
 --Paul Prost (PP-18955) and Matt Abelman (MA-17560) follow closely with 34 transactions each:
 Paul Prost has generated the highest total sales in this table with $7,252.61, indicating he might purchase higher-priced items compared to others.
+
+*purchase frequency for each customer (sort table by Total sales DESC)*
+
+| customer_id | customer_name      | total_sales | purchase_frequency |
+|-------------|--------------------|-------------|--------------------|
+| SM-20320    | Sean Miller        | 25043.05    | 15                 |
+| TC-20980    | Tamara Chand       | 19052.218   | 12                 |
+| RB-19360    | Raymond Buch       | 15117.339   | 18                 |
+| TA-21385    | Tom Ashbrook       | 14595.62    | 10                 |
+| AB-10105    | Adrian Barton      | 14473.571   | 20                 |
+| KL-16645    | Ken Lonsdale       | 14175.229   | 29                 |
+| SC-20095    | Sanjit Chand       | 14142.334   | 22                 |
+| HL-15040    | Hunter Lopez       | 12873.298   | 11                 |
+| SE-20110    | Sanjit Engle       | 12209.438   | 19                 |
+| CC-12370    | Christopher Conant | 12129.072   | 11                 |
+
+
+*19.New Customers in each year
+| year | new_customers |
+|------|---------------|
+| 2015 | 589           |
+| 2016 | 141           |
+| 2017 | 52            |
+| 2018 | 11            |
+
+*2015 Spike: If this was the launch year or the start of data tracking, it would naturally have the highest number of "new" customers.
+Could also reflect an aggressive marketing campaign or expansion into new regions.
+*Declining Trend: The sharp decline over the years suggests:
+Market saturation (fewer new customers available to acquire).
+Focus shifted to retaining existing customers rather than acquiring new ones.
+Reduced marketing or acquisition investments.
+*2018 Minimal New Customers: Could indicate a mature market with diminishing returns on acquisition efforts.
+May reflect a lack of innovation in targeting or an over-reliance on existing customers.
+*Recommendations*
+*Analyze Customer Acquisition Channels:
+1.Investigate which channels were effective in 2015 and why they declined in subsequent years.
+2.Reinvest in high-performing channels or explore new acquisition strategies.
+*Focus on Retention and Referrals:
+ With declining new customer acquisition, focus on retaining existing customers and encouraging referrals from loyal ones.
+*Target New Markets:
+ Explore untapped markets or segments to expand the customer base.
+*Evaluate Marketing Efforts:
+ Assess if reduced marketing budgets or ineffective campaigns contributed to the decline.
+
