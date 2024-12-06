@@ -1,11 +1,11 @@
-#Total revenue
+--Total revenue
 SELECT 
     SUM(Sales) AS total_revenue
 FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`;
 -- Total revenue: 2261536.7826999
 
-#Daily, Weekly, and Monthly Sales Trends
-#yearly sales to to find out which year has the most sales
+--Daily, Weekly, and Monthly Sales Trends
+--yearly sales to to find out which year has the most sales
 select 
  year,
  sum(Sales) AS total_sales
@@ -172,5 +172,263 @@ SELECT *
 FROM cumulative_sales
 WHERE cumulative_contribution <= 80; -- To find the top 20% contributors
 -- Filter: Retrieves only those rows where the cumulative contribution is less than or equal to 80%. These represent the products that collectively account for 80% of total sales.
+
+--purchase frequency for each customer
+SELECT
+    Customer_ID AS customer_id,
+    Customer_Name AS customer_name,
+    sum(Sales) AS total_sales,
+    count(*)/ COUNT(DISTINCT Customer_ID) AS purchase_frequency -- Calculates the purchase frequency for each customer.
+FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+GROUP BY Customer_ID, Customer_Name
+ORDER BY total_sales DESC;
+
+
+SELECT
+    COUNT(*) AS total_orders, -- Total number of all orders
+    COUNT(DISTINCT Customer_ID) AS total_customers, -- Number of unique customers
+    COUNT(*) * 1.0 / COUNT(DISTINCT Customer_ID) AS overall_purchase_frequency
+FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`;
+
+WITH 
+-- Identify customers active in the previous period (6 months ago)
+previous_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2018-12-31'), INTERVAL -12 MONTH) -- Start of the previous 6-month period
+                           AND DATE_ADD(DATE('2018-12-31'), INTERVAL -6 MONTH)    -- End of the previous 6-month period
+),
+
+-- Identify customers active in the current period (last 6 months)
+current_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2018-12-31'), INTERVAL -6 MONTH) -- Start of the current 6-month period
+                           AND DATE('2018-12-31')                                -- End of the current period
+),
+
+-- Identify churned customers (present in the previous period but not in the current period)
+churned_customers AS (
+    SELECT 
+        Customer_ID
+    FROM previous_period_customers
+    WHERE Customer_ID NOT IN (SELECT Customer_ID FROM current_period_customers)
+)
+
+-- Calculate churn rate
+SELECT
+    COUNT(DISTINCT Customer_ID) AS customers_at_start,  -- Total customers in the previous period
+    (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) AS customers_lost, -- Total churned customers
+    ROUND(
+        (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) * 100.0 / COUNT(DISTINCT Customer_ID), 
+        2
+    ) AS churn_rate -- Churn rate as a percentage
+FROM previous_period_customers;
+
+-- churned customers and churned rate in 2017
+WITH 
+-- Identify customers active in the previous period (6 months ago)
+previous_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2017-12-31'), INTERVAL -12 MONTH) -- Start of the previous 6-month period
+                           AND DATE_ADD(DATE('2017-12-31'), INTERVAL -6 MONTH)    -- End of the previous 6-month period
+),
+
+-- Identify customers active in the current period (last 6 months)
+current_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2017-12-31'), INTERVAL -6 MONTH) -- Start of the current 6-month period
+                           AND DATE('2017-12-31')                                -- End of the current period
+),
+
+-- Identify churned customers (present in the previous period but not in the current period)
+churned_customers AS (
+    SELECT 
+        Customer_ID
+    FROM previous_period_customers
+    WHERE Customer_ID NOT IN (SELECT Customer_ID FROM current_period_customers)
+)
+
+-- Calculate churn rate
+SELECT
+    COUNT(DISTINCT Customer_ID) AS customers_at_start,  -- Total customers in the previous period
+    (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) AS customers_lost, -- Total churned customers
+    ROUND(
+        (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) * 100.0 / COUNT(DISTINCT Customer_ID), 
+        2
+    ) AS churn_rate -- Churn rate as a percentage
+FROM previous_period_customers;
+
+-- churned customers and churned rate in 2016
+WITH 
+-- Identify customers active in the previous period (6 months ago)
+previous_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2016-12-31'), INTERVAL -12 MONTH) -- Start of the previous 6-month period
+                           AND DATE_ADD(DATE('2016-12-31'), INTERVAL -6 MONTH)    -- End of the previous 6-month period
+),
+
+-- Identify customers active in the current period (last 6 months)
+current_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2016-12-31'), INTERVAL -6 MONTH) -- Start of the current 6-month period
+                           AND DATE('2016-12-31')                                -- End of the current period
+),
+
+-- Identify churned customers (present in the previous period but not in the current period)
+churned_customers AS (
+    SELECT 
+        Customer_ID
+    FROM previous_period_customers
+    WHERE Customer_ID NOT IN (SELECT Customer_ID FROM current_period_customers)
+)
+
+-- Calculate churn rate
+SELECT
+    COUNT(DISTINCT Customer_ID) AS customers_at_start,  -- Total customers in the previous period
+    (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) AS customers_lost, -- Total churned customers
+    ROUND(
+        (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) * 100.0 / COUNT(DISTINCT Customer_ID), 
+        2
+    ) AS churn_rate -- Churn rate as a percentage
+FROM previous_period_customers;
+
+-- churned customers and churned rate in 2015
+WITH 
+-- Identify customers active in the previous period (6 months ago)
+previous_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2015-12-31'), INTERVAL -12 MONTH) -- Start of the previous 6-month period
+                           AND DATE_ADD(DATE('2015-12-31'), INTERVAL -6 MONTH)    -- End of the previous 6-month period
+),
+
+-- Identify customers active in the current period (last 6 months)
+current_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2015-12-31'), INTERVAL -6 MONTH) -- Start of the current 6-month period
+                           AND DATE('2015-12-31')                                -- End of the current period
+),
+
+-- Identify churned customers (present in the previous period but not in the current period)
+churned_customers AS (
+    SELECT 
+        Customer_ID
+    FROM previous_period_customers
+    WHERE Customer_ID NOT IN (SELECT Customer_ID FROM current_period_customers)
+)
+
+-- Calculate churn rate
+SELECT
+    COUNT(DISTINCT Customer_ID) AS customers_at_start,  -- Total customers in the previous period
+    (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) AS customers_lost, -- Total churned customers
+    ROUND(
+        (SELECT COUNT(DISTINCT Customer_ID) FROM churned_customers) * 100.0 / COUNT(DISTINCT Customer_ID), 
+        2
+    ) AS churn_rate -- Churn rate as a percentage
+FROM previous_period_customers;
+
+
+WITH 
+-- Identify customers active in the previous period (6-12 months ago)
+previous_period_customers AS (
+    SELECT DISTINCT Customer_ID, Customer_Name
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2018-12-31'), INTERVAL -12 MONTH) -- Start of the previous 6-month period
+                           AND DATE_ADD(DATE('2018-12-31'), INTERVAL -6 MONTH) -- End of the previous 6-month period
+),
+
+-- Identify customers active in the current period (last 6 months)
+current_period_customers AS (
+    SELECT DISTINCT Customer_ID
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    WHERE Order_Date BETWEEN DATE_ADD(DATE('2018-12-31'), INTERVAL -6 MONTH) -- Start of the current 6-month period
+                           AND DATE('2018-12-31')                             -- End of the current period
+),
+
+-- Find churned customers and their last purchase date
+churned_customers AS (
+    SELECT 
+        ppc.Customer_ID,
+        ppc.Customer_Name,
+        MAX(cs.Order_Date) AS Last_Purchase_Date -- Get the last purchase date for churned customers
+    FROM previous_period_customers ppc
+    LEFT JOIN `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales` cs
+        ON ppc.Customer_ID = cs.Customer_ID
+    WHERE ppc.Customer_ID NOT IN (SELECT Customer_ID FROM current_period_customers)
+    GROUP BY ppc.Customer_ID, ppc.Customer_Name
+)
+
+-- Final output with duration since last order
+SELECT 
+    Customer_ID,
+    Customer_Name,
+    Last_Purchase_Date,
+    DATE_DIFF(DATE('2018-12-31'), Last_Purchase_Date, MONTH) AS Months_Since_Last_Order, -- Months since the last order
+    DATE_DIFF(DATE('2018-12-31'), Last_Purchase_Date, DAY) AS Days_Since_Last_Order     -- Days since the last order
+FROM churned_customers
+ORDER BY Months_Since_Last_Order DESC;
+
+--total sales by category
+select
+Category,
+count(distinct Product_ID)
+FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+GROUP BY Category;
+-- Total sales by segment
+select
+Distinct segment,
+sum(Sales)AS Total_sales
+FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+Group By Segment;
+
+--Total sales by customers,find out which customers made the most sales
+select
+DISTINCT City,Customer_Name,year,
+SUM(Sales) AS Total_sales
+FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+GROUP BY City,Customer_Name,year
+ORDER BY Total_sales DESC;
+
+--Find new Customers in 2018
+WITH first_purchase AS (
+    SELECT
+        Customer_ID,
+        MIN(Order_Date) AS first_purchase_date 
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    GROUP BY Customer_ID
+)
+SELECT 
+    fp.Customer_ID AS customer_id,
+    cs.Customer_Name AS customer_name,
+    fp.first_purchase_date,
+    SUM(cs.Sales) AS total_sales_in_2018
+FROM first_purchase fp
+JOIN `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales` cs
+    ON fp.Customer_ID = cs.Customer_ID
+WHERE EXTRACT(YEAR FROM fp.first_purchase_date) = 2018
+  AND EXTRACT(YEAR FROM cs.Order_Date) = 2018
+GROUP BY fp.Customer_ID, cs.Customer_Name, fp.first_purchase_date
+ORDER BY total_sales_in_2018 DESC;
+
+--find total number of new customers in each year
+WITH first_purchase AS (
+    SELECT 
+        Customer_ID,
+        MIN(Order_Date) AS first_purchase_date
+    FROM `astute-curve-435613-t7.Superstore_Sales.Cleaned_Sales`
+    GROUP BY Customer_ID
+)
+SELECT 
+    EXTRACT(YEAR FROM first_purchase_date) AS year,
+    COUNT(Customer_ID) AS new_customers
+FROM first_purchase
+GROUP BY year
+ORDER BY year;
 
 
